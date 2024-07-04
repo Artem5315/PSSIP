@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант №15</title>
+    <style>
+        img:hover {
+            transform: scale(2);
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <p>Шилко Артем Сергеевия</p>
+    <a href="https://honda.by/">Ссылка на ваш любимый сайт</a>
+    <img src="honda-civic-purple-stance-1953.jpg" alt="Любое изображение">
+
+    <script>
+        // Получение информации о реферере
+        let referrer = document.referrer;
+        console.log(referrer);
+
+        // Вывод информации через 5 секунд
+        setTimeout(() => {
+            alert(referrer);
+        }, 5000);
+
+        // Поменять узлы 2 и 3 местами
+        let link = document.querySelector('a');
+        let image = document.querySelector('img');
+        link.parentNode.insertBefore(image, link);
+
+        // Получение размеров экрана
+        let screenWidth = window.screen.width;
+        let screenHeight = window.screen.height;
+        console.log(`Ширина экрана: ${screenWidth}, Высота экрана: ${screenHeight}`);
+
+        // Отображение информации в новом окне через 3 секунды
+        setTimeout(() => {
+            let newWindow = window.open("", "", "width=200,height=100");
+            newWindow.document.write(`Ширина экрана: ${screenWidth}, Высота экрана: ${screenHeight}`);
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя сайт-визитка</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      color: #004080;
+      font-size: 24px;
+    }
+    b {
+      color: #004080;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .skills {
+      margin-top: 20px;
+    }
+    .works {
+      margin-top: 20px;
+    }
+    .projects {
+      margin-top: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      background-color: #004080;
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .registration-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.registration-form h3 {
+  text-align: center;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-top: 10px;
+}
+
+.registration-form input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registration-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+<body>
+  <h1>Привет, я Артём Шилко</h1>
+  
+  <b>Желаемая должность:</b> Программист, Веб-дизайнер.
+  <br><b>Желаемый уровень дохода:</b> от 1000 рублей.</br>
+  <br></br>
+  <b>Дата рождения:</b> 29.12.2005 г.
+  <br></br>
+  <b>Проживание:</b> Беларусь, город Гродно, улица Ивана Мележа.
+  <br>Готов к командировкам и перезду.</br>
+  
+  <div class="contact-info">
+    <h3>Контактная информация:</h3>
+    <br>Email: artemshilko69@gmail.com</br>
+    <br>Телефон: +375 (33) 383-21-73</br>
+  </div>
+  
+  <div class="skills">
+    <h3>Ключевые знания и навыки</h3>
+    <br><b>Языки программирования которые знаю:</b></br>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>PascalABC</li>
+      <li>C#</li>
+      <li>Delphi</li>
+    </ul>
+    <br><b>Умею пользоваться такими программами как:</b></br>
+    <ul>
+      <li>Adobe Photoshop</li>
+      <li>Microsoft Office</li>
+      <li>Adobe Illustrator</li>
+      <li>VS Code</li>
+      <li>VS 2022</li>
+      <li>Blender</li>
+      <li>Figma</li>
+      <br></br>
+      <li>Mindomo</li>
+    </ul>
+  </div>
+
+  <div class="works">
+    <h3>Опыт работы:</h3>
+    <b>20.09.2022 - 12.12.2022</b> Учебная практика, оператор ЭВМ.
+    <br>Получил 6 разряд</br>
+    <hr>
+   <ul>
+     <li>Научился быстро печатать</li>
+     <li>Научился пользоваться профессионально Microsoft Office</li>
+     <li>Научился работать в программе Adobe Illustrator</li>
+   </ul>
+   <hr>
+   <br><br>
+   <b>26.09.2023 - 10.12.2023</b> Учебная практика на производстве.
+    <br>Получил 8/10 от работодателя</br>
+    <hr>
+   <ul>
+     <li>Научился создавать сайт</li>
+     <li>Научился прокладывать интернет</li>
+     <li>Научился писать документацию для проекта</li>
+     <li>Помогал другим рабочим с проблемами в ПК</li>
+   </ul>
+   <hr>
+  
+  <div class="projects">
+    <h2>Проекты</h2>
+    Все мои проекты по ссылке: 
+    <a href="https://github.com/Artem5315">Перейти на github</a>
+  </div>
+  <img src="путь_к_изображению.png" alt="Описание изображения">
+  <table>
+  <tr>
+    <td>Ячейка 1</td>
+    <td>Ячейка 2</td>
+  </tr>
+  <tr>
+    <td>Ячейка 3</td>
+    <td>Ячейка 4</td>
+  </tr>
+</table>
+<div class="registration-form">
+  <h3>Форма регистрации</h3>
+  <form>
+    <label for="name">Имя:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Пароль:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <input type="submit" value="Зарегистрироваться">
+  </form>
+  <button onclick="location.href = 'Lab5.html';" id="myButton" class="float-left submit-button" >Lab_5</button>
+  <button onclick="location.href = 'Lab6.html';" id="myButton" class="float-left submit-button" >Lab_6</button>
+  <button onclick="location.href = 'Lab7.html';" id="myButton" class="float-left submit-button" >Lab_7</button>
+  <button onclick="location.href = 'Lab8.html';" id="myButton" class="float-left submit-button" >Lab_8</button>
+  <button onclick="location.href = 'Lab9.html';" id="myButton" class="float-left submit-button" >Lab_9</button>
+  <button onclick="location.href = 'Lab10-12.html';" id="myButton" class="float-left submit-button" >Lab_10-12</Lab_10-12></button>
+  <button onclick="location.href = 'Lab13-14.html';" id="myButton" class="float-left submit-button" >Lab_13-14</button>
+</div>
+
+  <footer>
+    <p>&copy; 2024 Моя сайт-визитка. Все права защищены.</p>
+</footer>
+</body>
+</html>

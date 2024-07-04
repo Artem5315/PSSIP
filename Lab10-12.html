@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш сайт</title>
+    <script>
+        function showCurrentMonth() {
+            const currentDate = new Date();
+            const currentMonth = currentDate.toLocaleString('default', { month: 'long' });
+            alert(`Текущий месяц: ${currentMonth}`);
+        }
+
+        function processArray() {
+            // Создаем массив из 7 целых элементов
+            let arr = [3, 1, 4, 1, 5, 9, 2];
+            document.getElementById('originalArray').innerText = "Исходный массив: " + arr.join(", ");
+
+            // Находим максимальный элемент в массиве
+            let maxElement = Math.max(...arr);
+            document.getElementById('maxElement').innerText = "Максимальный элемент: " + maxElement;
+
+            // Переставляем первый и последний элементы местами
+            [arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]];
+            document.getElementById('modifiedArray').innerText = "Измененный массив: " + arr.join(", ");
+        }
+
+        function stringOperations() {
+            // Создаем строковые переменные
+            let s1 = "Я люблю Гродно, я люблю кататься на велике";
+            let s2 = "Я учусь в Политехе";
+
+            // Определяем длину строки s2
+            let lengthS2 = s2.length;
+            document.getElementById('lengthS2').innerText = "Длина строки S2: " + lengthS2;
+
+            // Выделяем 22-й символ в строке s1 (если он существует)
+            let charAt22 = s1.length >= 22 ? s1.charAt(21) : "Символа нет";
+            document.getElementById('charAt22').innerText = "22-й символ в строке S1: " + charAt22;
+
+            // Определяем ASCII-код этого символа (если он существует)
+            let asciiCode = s1.length >= 22 ? s1.charCodeAt(21) : "Символа нет";
+            document.getElementById('asciiCode').innerText = "ASCII-код 22-го символа: " + asciiCode;
+
+            // Заменяем в строке s1 слово "Гродно" на "Минск"
+            let modifiedS1 = s1.replace("Гродно", "Минск");
+            document.getElementById('modifiedS1').innerText = "Измененная строка S1: " + modifiedS1;
+        }
+    </script>
+</head>
+<body>
+    <!-- Ваш контент сайта -->
+    <button onclick="showCurrentMonth()">Показать месяц</button>
+    <button onclick="processArray()">Обработать массив</button>
+    <button onclick="stringOperations()">Обработать строки</button>
+    <div id="originalArray"></div>
+    <div id="maxElement"></div>
+    <div id="modifiedArray"></div>
+    <div id="lengthS2"></div>
+    <div id="charAt22"></div>
+    <div id="asciiCode"></div>
+    <div id="modifiedS1"></div>
+    <script>
+        for (let i = 0; i < 27; i++) {
+            document.write("Шилко Артем<br>");
+        }
+    </script>
+</body>
+</html>
+

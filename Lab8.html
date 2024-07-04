@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета кандидата и Товар</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container, .product-container {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .form-container {
+            background-color: #6a0dad;
+            color: white;
+        }
+        .form-container input, .form-container button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .product-container {
+            background-color: #f5f5f5;
+            color: black;
+        }
+        .product-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-details h2, .product-details p, .product-details button {
+            margin: 10px 0;
+        }
+        .product-details button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Анкета кандидата</h1>
+    <form>
+        <input type="text" placeholder="Имя" required>
+        <input type="date" placeholder="Дата рождения" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="text" placeholder="Город" required>
+        <input type="text" placeholder="Должность" required>
+        <textarea placeholder="Дополнительные комментарии" rows="4"></textarea>
+        <button type="submit">Отправить анкету</button>
+    </form>
+</div>
+
+<div class="product-container">
+    <img src="adidas-neo-10k-9706-1.jpg" alt="Adidas Duramo Sneakers">
+    <div class="product-details">
+        <h2>Кроссовки Duramo</h2>
+        <p>Цена: $71.00</p>
+        <p>Рейтинг: ★★★★☆</p>
+        <p>Размеры: 38, 39, 40, 41, 42</p>
+        <button>Добавить в корзину</button>
+    </div>
+</div>
+
+</body>
+</html>
